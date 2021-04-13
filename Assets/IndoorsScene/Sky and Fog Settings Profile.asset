@@ -154,25 +154,25 @@ MonoBehaviour:
   m_AdvancedMode: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.53
+    m_Value: 0.01
     min: -1
     max: 1
   xMultiplier:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
     min: 0
     max: 1
   yMultiplier:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: 1
     min: 0
     max: 1
   center:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0.5, y: 0.5}
   scale:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 1.24
     min: 0.01
     max: 5
 --- !u!114 &-3822959348972777080
@@ -245,12 +245,12 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 2
   threshold:
-    m_OverrideState: 1
-    m_Value: 0
+    m_OverrideState: 0
+    m_Value: 39.68
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.3
+    m_Value: 0.606
     min: 0
     max: 1
   scatter:
@@ -378,6 +378,7 @@ MonoBehaviour:
   - {fileID: -1349862143483902732}
   - {fileID: 7462100287738533413}
   - {fileID: -3822959348972777080}
+  - {fileID: 7205986186422855060}
 --- !u!114 &4745465664678062571
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -700,6 +701,75 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0
   fogType:
+    m_OverrideState: 1
+    m_Value: 0
+--- !u!114 &7205986186422855060
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa3b8214f75b354e9ba2caadd022259, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 0
+  m_AdvancedMode: 0
+  quality:
+    m_OverrideState: 1
+    m_Value: 2
+  focusMode:
+    m_OverrideState: 1
+    m_Value: 2
+  focusDistance:
+    m_OverrideState: 1
+    m_Value: 2.15
+    min: 0.1
+  nearFocusStart:
+    m_OverrideState: 1
+    m_Value: 2.4
+    min: 0
+  nearFocusEnd:
+    m_OverrideState: 1
+    m_Value: 1.66
+    min: 0
+  farFocusStart:
+    m_OverrideState: 1
+    m_Value: 5.82
+    min: 0
+  farFocusEnd:
+    m_OverrideState: 1
+    m_Value: 11.65
+    min: 0
+  m_NearSampleCount:
+    m_OverrideState: 1
+    m_Value: 8
+    min: 3
+    max: 8
+  m_NearMaxBlur:
+    m_OverrideState: 1
+    m_Value: 7
+    min: 0
+    max: 8
+  m_FarSampleCount:
+    m_OverrideState: 1
+    m_Value: 14
+    min: 3
+    max: 16
+  m_FarMaxBlur:
+    m_OverrideState: 1
+    m_Value: 13
+    min: 0
+    max: 16
+  m_HighQualityFiltering:
+    m_OverrideState: 1
+    m_Value: 1
+  m_Resolution:
+    m_OverrideState: 1
+    m_Value: 1
+  m_PhysicallyBased:
     m_OverrideState: 1
     m_Value: 0
 --- !u!114 &7462100287738533413
